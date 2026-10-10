@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T00:00:00Z",
+  "title": "Design System: Go-Live Readiness",
+  "extensions": {
+    "colorMeta": {
+      "forest": {"role":"primary","displayName":"Deep Forest","canonical":"#2d3a31","tonalRamp":["#111612","#1f2922","#2d3a31","#53624d","#7f8d79","#aeb8a9","#d9ded6","#f2f5f1"]},
+      "sage": {"role":"secondary","displayName":"Garden Sage","canonical":"#8c9a84","tonalRamp":["#1d241a","#35402f","#53624d","#71806a","#8c9a84","#b1baac","#d7ddd3","#f0f3ee"]},
+      "terracotta": {"role":"tertiary","displayName":"Risk Terracotta","canonical":"#a95f4e","tonalRamp":["#2a1713","#563028","#7c4438","#a95f4e","#c38474","#d9ad9f","#edd5cd","#faf0ed"]},
+      "alabaster": {"role":"neutral","displayName":"Warm Alabaster","canonical":"#f9f8f4","tonalRamp":["#20231f","#3d423c","#626860","#8b9088","#b2b6af","#d3d5d0","#e8e8e4","#f9f8f4"]}
+    },
+    "typographyMeta": {"display":{"displayName":"Editorial Command","purpose":"Launch proposition and major decision sections."},"body":{"displayName":"Humanist Operations","purpose":"Tasks, risks, owners, and support copy."}},
+    "shadows": [{"name":"botanical-panel","value":"0 20px 40px -28px rgba(45,58,49,.35)","purpose":"Quiet separation for primary command surfaces."}],
+    "motion": [{"name":"graceful-state","value":"280ms ease-out","purpose":"Unhurried hover feedback on actions."}],
+    "breakpoints": [{"name":"stack","value":"850px"},{"name":"cards","value":"600px"}]
+  },
+  "components": [
+    {"name":"Primary Button","kind":"button","refersTo":"button-primary","description":"Forest launch action.","html":"<button class=\"ds-primary\">LOG A RISK</button>","css":".ds-primary{min-height:46px;padding:11px 19px;border:0;border-radius:999px;background:#2d3a31;color:#fff;font:700 13px 'Source Sans 3',sans-serif;letter-spacing:.08em;transition:.28s ease-out}.ds-primary:hover{transform:translateY(-2px);background:#a95f4e}.ds-primary:focus-visible{outline:3px solid #a95f4e;outline-offset:4px}"},
+    {"name":"Severity Tag","kind":"chip","description":"Muted text-backed risk signal.","html":"<span class=\"ds-severity\">CRITICAL</span>","css":".ds-severity{display:inline-block;padding:4px 10px;border-radius:999px;background:#edd6d0;color:#7d382b;font:700 12px 'Source Sans 3',sans-serif}"}
+  ],
+  "narrative": {
+    "northStar": "The Conservatory Briefing",
+    "overview": "An editorial briefing with the organic restraint of a botanical conservatory, built for consequential launch decisions.",
+    "keyCharacteristics": ["Forest editorial type","Alabaster field","Sage and clay signals","Arch-shaped priority surfaces"],
+    "rules": [{"name":"The Calm Signal Rule","body":"Status colors remain muted and always appear with explicit language.","section":"colors"}],
+    "dos": ["Do pair every color signal with readable status text."],
+    "donts": ["Don't use procedural grain overlays.","Don't let editorial styling obscure owners, blockers, or next actions."]
+  }
+}
